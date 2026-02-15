@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Forretter</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="imgs/logo/logo-square-clean.webp" alt="" class="logo-img" />
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-container" id="navMenu">
+          <a href="galleri.html" class="nav-link">Galleri</a>
+          <a href="kontakt.html" class="nav-link">Kontakt</a>
+          <a href="mig.html" class="nav-link">Om mig</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <img
+          src="imgs/pictures/forret-hero.webp"
+          alt=""
+          class="hero-img desktop"
+        />
+        <img
+          src="imgs/pictures/forret-hero-mobil.webp"
+          alt=""
+          class="hero-img mobil"
+        />
+        <h1 class="hero-title">Forretter</h1>
+      </section>
+      <section class="menu">
+        <!-- Card 1: 4 Gode Fra Havet -->
+        <div class="menu-card">
+          <h3 class="menu-card-title">4 Gode Fra Havet</h3>
+          <div class="menu-card-items">
+            <p class="menu-item">
+              Varmrøget laks fra egen rygeovn med dildcreme og sprod salat
+            </p>
+            <p class="menu-item">
+              Blåmuslinger, hvidvinsdampede med friske urter
+            </p>
+            <p class="menu-item">
+              Scampirejor i hvidløgsolie på bund af knasende kål
+            </p>
+            <p class="menu-item">Tun stegt i sesam med tang salat</p>
+            <p class="menu-item">Hertil serveres hjemmebagt brød</p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 125,-</p>
+        </div>
+
+        <!-- Card 2: 4 Gode Fra Landet -->
+        <div class="menu-card">
+          <h3 class="menu-card-title">4 Gode Fra Landet</h3>
+          <div class="menu-card-items">
+            <p class="menu-item">
+              Marineret kylling på bund af saftig salat med sprod bacon og karry
+              creme
+            </p>
+            <p class="menu-item">
+              Serrano skinke med melon og hjemmelavet pesto
+            </p>
+            <p class="menu-item">Pølse med oliven og sennepscreme</p>
+            <p class="menu-item">
+              Oksecarpaccio på rucola med trøffelolie og nødder
+            </p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 125,-</p>
+        </div>
+
+        <!-- Card 3: Tunmousse -->
+        <div class="menu-card">
+          <h3 class="menu-card-title">Tunmousse</h3>
+          <div class="menu-card-items">
+            <p class="menu-item">Cremet tunmousse</p>
+            <p class="menu-item">
+              Serveres med hjemmebagt brød og caviar dressing
+            </p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 80,-</p>
+        </div>
+
+        <!-- Card 4: Rejecocktail -->
+        <div class="menu-card">
+          <h3 class="menu-card-title">Rejecocktail</h3>
+          <div class="menu-card-items">
+            <p class="menu-item">Lækker rejecocktail</p>
+            <p class="menu-item">
+              Serveres med hjemmebagt brød og cremet rød dressing
+            </p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 90,-</p>
+        </div>
+
+        <!-- Card 5: Vandbakkelse -->
+        <div class="menu-card">
+          <h3 class="menu-card-title">Vandbakkelse</h3>
+          <div class="menu-card-items">
+            <p class="menu-item">Hjemmelavet vandbakkelse</p>
+            <p class="menu-item">
+              Fyldt med hønsesalat, sprod bacon og stegt ananas
+            </p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 75,-</p>
+        </div>
+
+        <!-- Card 6: Carpaccio -->
+        <div class="menu-card">
+          <h3 class="menu-card-title">Carpaccio</h3>
+          <div class="menu-card-items">
+            <p class="menu-item">Lækker carpaccio</p>
+            <p class="menu-item">
+              Serveret på rucola med trøffelolie, parmesan og nødder, hertil
+              hjemmebagt brød
+            </p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 90,-</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info footer-container">
+        <h3 class="footer-title">RH Catering</h3>
+        <p>Skovgårdsvejen 1, 3700 Rønne</p>
+        <p>CVR: 45952983</p>
+        <a href="betingelser.html">Salgs- og leveringsbetingelser</a>
+      </div>
+      <div class="socials footer-container">
+        <h3 class="footer-title">Følg mig</h3>
+        <a
+          href="https://www.facebook.com/profile.php?id=61586051840915"
+          target="_blank"
+        >
+          <img src="imgs/icons/facebook-brand.svg" alt="" />
+        </a>
+      </div>
+      <div class="contact footer-container">
+        <h3 class="footer-title">Kontakt</h3>
+        <p>Email: dorte@rhcatering.dk</p>
+        <p>Telefon: +45 42338230</p>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
