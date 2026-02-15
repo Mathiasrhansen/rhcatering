@@ -68,6 +68,8 @@
     text-align: center;
     margin-bottom: 30px;
     text-transform: capitalize;
+    border-bottom: 1px solid var(--brand);
+    padding-bottom: 20px;
 }
 
 .menu-card-items {
@@ -87,12 +89,12 @@
 
 .menu-card-price {
     font-family: inter-semi;
-    color: #F6C636;
+    color: var(--brand);
     font-size: 16px;
     text-align: center;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--brand);
 }
 
 /* Mobile Responsive Styles */
@@ -122,6 +124,7 @@
     .menu-card {
         min-height: auto;
         padding: 30px 20px;
+        margin: 0 50px;
     }
 
     .menu-card-title {
