@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="menu-v2.css" />
+    <title>Festbuffet</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="imgs/logo/logo-square-clean.webp" alt="" class="logo-img" />
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-container" id="navMenu">
+          <a href="galleri.html" class="nav-link">Galleri</a>
+          <a href="kontakt.html" class="nav-link">Kontakt</a>
+          <a href="mig.html" class="nav-link">Om mig</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <img src="imgs/pictures/Group55.webp" alt="" class="hero-img" />
+        <h1 class="hero-title">Festbuffeter</h1>
+      </section>
+      <section class="menu">
+        <div class="menu-card">
+          <h3 class="menu-card-title">Buffet 1</h3>
+          <div class="menu-card-items">
+            <p>Hel skinke af Grambogård gris, letsaltet med sprøde svær</p>
+            <p>
+              Helstegt oksefilet af korn opfedet kødkvæg med krølfedt, saftig og
+              smagfuld
+            </p>
+            <p>
+              Hertil serveres: cremede flødekartofler med urter, små ovnbagte
+              krydderkartofler, klassisk bearnaise og kraftig kalve skysauce
+            </p>
+            <p>
+              Et udvalg af friske salater: saftig tomatsalat med mozzarella, god
+              olivenolie og frisk basilikum
+            </p>
+            <p>Fyldig pastasalat af frisk fettuccine med sprøde urter</p>
+            <p>Sprød grøn salat med belugalinser fra Food Bornholm</p>
+            <p>2 slags hjemmelavede dressinger</p>
+            <p>Hjemmebagt foccacia brød lunt og luftigt.</p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 275,-</p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Buffet 2</h3>
+          <div class="menu-card-items">
+            <p>Rosastegt kalveculotte af dansk gourmet kalv</p>
+            <p>Letsprængt kalkunbryst i pestomarinade</p>
+            <p>
+              Hertil serveres: Små saltkartofler og hjemmelavet mojo sauce,
+              cremede flødekartofler med urter og tomat-bearnaise
+            </p>
+            <p>
+              Et udvalg af friske salater: Grøn salat med sprøde grøntsager og
+              kerner
+            </p>
+            <p>Bønnesalat med sprød bacon, feta og vinaigrette</p>
+            <p>Hjemmelavet krydderurtedressing</p>
+            <p>Hjemmebagt foccacia brød lunt og luftigt.</p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 255,-</p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Buffet 3</h3>
+          <div class="menu-card-items">
+            <p>Saftig glaseret skinke med sukkeret dijon og Bornholmersennep</p>
+            <p>Barbecue-marineret kyllingebryst af dansk kylling</p>
+            <p>
+              Hertil serveres: Små ovnbagte krydderkartofler Marineret
+              kartoffelsalat med friske krydderurter Cremet coleslaw med æble og
+              fennikel Grøn salat med sprøde grøntsager og kerner
+            </p>
+            <p>Mild Barbecuesauce</p>
+            <p>Frisk yoghurt dressing</p>
+            <p>Hjemmebagt foccacia brød lunt og luftigt.</p>
+          </div>
+          <p class="menu-card-price">pris pr. kuvert 249,-</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info footer-container">
+        <h3 class="footer-title">RH Catering</h3>
+        <p>Skovgårdsvejen 1, 3700 Rønne</p>
+        <p>CVR: 45952983</p>
+        <a href="betingelser.html">Salgs- og leveringsbetingelser</a>
+      </div>
+      <div class="socials footer-container">
+        <h3 class="footer-title">Følg mig</h3>
+        <a
+          href="https://www.facebook.com/profile.php?id=61586051840915"
+          target="_blank"
+        >
+          <img src="imgs/icons/facebook-brand.svg" alt="" />
+        </a>
+      </div>
+      <div class="contact footer-container">
+        <h3 class="footer-title">Kontakt</h3>
+        <p>Email: dorte@rhcatering.dk</p>
+        <p>Telefon: +45 42338230</p>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

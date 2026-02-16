@@ -14,7 +14,12 @@
         <a href="index.html" class="logo">
           <img src="imgs/logo/logo-square-clean.webp" alt="" class="logo-img" />
         </a>
-        <div class="nav-container">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-container" id="navMenu">
           <a href="galleri.html" class="nav-link">Galleri</a>
           <a href="kontakt.html" class="nav-link">Kontakt</a>
           <a href="mig.html" class="nav-link">Om mig</a>
@@ -22,7 +27,7 @@
       </nav>
     </header>
     <main>
-      <h1>Salgs- og leveringsbetingelser</h1>
+      <h1 class="heading">Salgs- og leveringsbetingelser</h1>
       <div class="paragraph">
         <h2>1. Generelt</h2>
         <p>
@@ -149,5 +154,11 @@
         <p>Telefon: +45 42338230</p>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

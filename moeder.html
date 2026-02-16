@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="menu-v2.css" />
+    <title>Møder</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="imgs/logo/logo-square-clean.webp" alt="" class="logo-img" />
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-container" id="navMenu">
+          <a href="galleri.html" class="nav-link">Galleri</a>
+          <a href="kontakt.html" class="nav-link">Kontakt</a>
+          <a href="mig.html" class="nav-link">Om mig</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <img src="imgs/pictures/Group-m.webp" alt="" class="hero-img" />
+        <h1 class="hero-title sandwich-title">Til møder mm.</h1>
+        <p class="hero-subtitle sandwich">
+          Alle retter serveres til kun 135 kr pr. kuvert ved minimum 8
+          personer<br />
+          Det forudsættes at der vælges samme ret til alle i selskabet
+        </p>
+      </section>
+      <section class="menu-2">
+        <div class="menu-card">
+          <h3 class="menu-card-title">Butter Chicken</h3>
+          <div class="menu-card-items">
+            <p>Cremet butter chicken af dansk kylling</p>
+            <p>med: kogte ris, grøn sprød salat, dressing og hjemmebagt brød</p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Frikadeller</h3>
+          <div class="menu-card-items">
+            <p>Frikadeller af hakket dansk gris fra Grambogård</p>
+            <p>med: klassisk cremet kartoffelsalat og råkostsalat med kerner</p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Landskinke</h3>
+          <div class="menu-card-items">
+            <p>Kogt og røget landskinke</p>
+            <p>
+              med: cremede flødekartofler med urter og grøn salat samt en frisk
+              urtedressing
+            </p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Chili Con Carne</h3>
+          <div class="menu-card-items">
+            <p>Chili con carne af hakket oksekød</p>
+            <p>med: kogte ris, tortillia chips og cremefraiche</p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Schnitzel</h3>
+          <div class="menu-card-items">
+            <p>Schnitzel af dansk svinemørbrad</p>
+            <p>
+              med: brasede kartofler, grønne smørsauterede ærter, friske drenge
+              og brunet smør
+            </p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Tærter</h3>
+          <div class="menu-card-items">
+            <p>Lækre hjemmelavede tærter</p>
+            <p>med: sprød salat, hjemmelavet dressing og hjemmebagt brød</p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Biksemad</h3>
+          <div class="menu-card-items">
+            <p>Klassisk biksemad</p>
+            <p>
+              med: bearnaise Sauce, ketchup, HP sauce og hjemmesyltede rødbeder
+            </p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+        <div class="menu-card">
+          <h3 class="menu-card-title">Kyllingelasagne</h3>
+          <div class="menu-card-items">
+            <p>Kyllingelasagne af dansk hakket kyllingekød</p>
+            <p>
+              med: sprød grøn salat, hjemmelavet dressing og hjemmebagt brød
+            </p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info footer-container">
+        <h3 class="footer-title">RH Catering</h3>
+        <p>Skovgårdsvejen 1, 3700 Rønne</p>
+        <p>CVR: 45952983</p>
+        <a href="betingelser.html">Salgs- og leveringsbetingelser</a>
+      </div>
+      <div class="socials footer-container">
+        <h3 class="footer-title">Følg mig</h3>
+        <a
+          href="https://www.facebook.com/profile.php?id=61586051840915"
+          target="_blank"
+        >
+          <img src="imgs/icons/facebook-brand.svg" alt="" />
+        </a>
+      </div>
+      <div class="contact footer-container">
+        <h3 class="footer-title">Kontakt</h3>
+        <p>Email: dorte@rhcatering.dk</p>
+        <p>Telefon: +45 42338230</p>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

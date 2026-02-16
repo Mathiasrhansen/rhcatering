@@ -14,14 +14,27 @@
         <a href="index.html" class="logo">
           <img src="imgs/logo/logo-square-clean.webp" alt="" class="logo-img" />
         </a>
-        <div class="nav-container">
-          <a href="#" class="nav-link">Galleri</a>
-          <a href="#" class="nav-link">Kontakt</a>
-          <a href="#" class="nav-link">Om mig</a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-container" id="navMenu">
+          <a href="galleri.html" class="nav-link">Galleri</a>
+          <a href="kontakt.html" class="nav-link">Kontakt</a>
+          <a href="mig.html" class="nav-link">Om mig</a>
         </div>
       </nav>
     </header>
     <main>
+      <section class="hero">
+        <img src="imgs/pictures/rh-catering.webp" alt="" class="hero-img" />
+        <div class="hero-text-container">
+          <p class="hero-text">Festmad der får gæsterne til at smile</p>
+          <p class="hero-text">God mad giver bedre møder</p>
+          <p class="hero-text">Vi holder jer kørende i høsten</p>
+        </div>
+      </section>
       <section class="menu-section">
         <div class="menu-card">
           <a href="forretter.html" class="menu-link" data-title="Forretter">
@@ -111,5 +124,11 @@
         <p>Telefon: +45 42338230</p>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

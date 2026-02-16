@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        width: 90vw;
+    }
+
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+

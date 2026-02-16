@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
     <link rel="stylesheet" href="general.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="menu-v2.css" />
+    <title>Hovedretter</title>
   </head>
   <body>
     <header>
@@ -13,14 +14,37 @@
         <a href="index.html" class="logo">
           <img src="imgs/logo/logo-square-clean.webp" alt="" class="logo-img" />
         </a>
-        <div class="nav-container">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-container" id="navMenu">
           <a href="galleri.html" class="nav-link">Galleri</a>
           <a href="kontakt.html" class="nav-link">Kontakt</a>
           <a href="mig.html" class="nav-link">Om mig</a>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="hero">
+        <img
+          src="imgs/pictures/hovedret-hero.webp"
+          alt=""
+          class="hero-img desktop"
+        />
+        <h1 class="hero-title">Hovedretter</h1>
+      </section>
+      <section class="menu">
+        <div class="menu-card">
+          <h3 class="menu-card-title"></h3>
+          <div class="menu-card-items">
+            <p></p>
+          </div>
+          <p class="menu-card-price"></p>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="info footer-container">
         <h3 class="footer-title">RH Catering</h3>
@@ -43,5 +67,11 @@
         <p>Telefon: +45 42338230</p>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

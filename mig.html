@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
     <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="betingelser.css" />
+    <link rel="stylesheet" href="mig.css" />
     <title>Om mig</title>
   </head>
   <body>
@@ -14,7 +14,12 @@
         <a href="index.html" class="logo">
           <img src="imgs/logo/logo-square-clean.webp" alt="" class="logo-img" />
         </a>
-        <div class="nav-container">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-container" id="navMenu">
           <a href="galleri.html" class="nav-link">Galleri</a>
           <a href="kontakt.html" class="nav-link">Kontakt</a>
           <a href="mig.html" class="nav-link">Om mig</a>
@@ -23,30 +28,41 @@
     </header>
     <main>
       <h1>Om mig</h1>
-      <div class="paragraph">
-        <p>
-          Velkommen til RH Catering som er et enkeltmands cateringfirma, der
-          leverer mad på hele øen og til alle selskaber, store som små.
-        </p>
-      </div>
-      <div class="paragraph">
-        <p>
-          Jeg hedder Dorte, er 48 og bor i Vestermarie, sammen med min mand
-          Michael Rønne-Hansen, det er også her jeg driver mit cateringfirma
-          fra.
-        </p>
-      </div>
-      <div class="paragraph">
-        <p>
-          Jeg er uddannet kok, og har i flere år været køkkenchef på Ølstauan i
-          Allinge.
-        </p>
-      </div>
-      <div class="paragraph">
-        <p>
-          Jeg sætter megen ære i at lave ærlig og hjemmelavet mad fra bunden,
-          med stor fokus på lokale råvarer og lokale leverandører.
-        </p>
+      <div class="container">
+        <div class="text-content">
+          <div class="paragraph">
+            <p>
+              Velkommen til RH Catering som er et enkeltmands cateringfirma, der
+              leverer mad på hele øen og til alle selskaber, store som små.
+            </p>
+          </div>
+          <div class="paragraph">
+            <p>
+              Jeg hedder Dorte, er 48 og bor i Vestermarie, sammen med min mand
+              Michael Rønne-Hansen, det er også her jeg driver mit cateringfirma
+              fra.
+            </p>
+          </div>
+          <div class="paragraph">
+            <p>
+              Jeg er uddannet kok, og har i flere år været køkkenchef på
+              Ølstauan i Allinge.
+            </p>
+          </div>
+          <div class="paragraph">
+            <p>
+              Jeg sætter megen ære i at lave ærlig og hjemmelavet mad fra
+              bunden, med stor fokus på lokale råvarer og lokale leverandører.
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img
+            src="imgs/pictures/dorte.webp"
+            alt="Dorte og Michael"
+            class="about-img"
+          />
+        </div>
       </div>
     </main>
     <footer>
@@ -71,5 +87,11 @@
         <p>Telefon: +45 42338230</p>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

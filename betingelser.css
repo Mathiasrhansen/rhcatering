@@ -32,3 +32,21 @@ main {
     width: 50px;
     height: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .information-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .paragraph{
+        width: 300px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+}
